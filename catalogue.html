@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalogue – Ndiaga Tech</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Ndiaga Tech</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#menu" aria-controls="menu"
+              aria-expanded="false" aria-label="Afficher le menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="catalogue.html">Catalogue</a></li>
+          <li class="nav-item"><a class="nav-link" href="panier.html">Panier</a></li>
+          <li class="nav-item"><a class="nav-link" href="gestion/connexion.html">Espace de gestion</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+    <h1 class="mb-4">Nos produits</h1>
+
+    <!-- Filtres -->
+    <form class="row g-3 align-items-end mb-4" action="#" method="get">
+      <div class="col-12 col-md-4">
+        <label for="categorie" class="form-label">Catégorie</label>
+        <select class="form-select" id="categorie" name="categorie">
+          <option selected>Téléphones</option>
+          <option>Écouteurs et audio</option>
+        </select>
+      </div>
+      <div class="col-6 col-md-3">
+        <label for="prixMin" class="form-label">Prix minimum</label>
+        <input type="number" class="form-control" id="prixMin" name="prixMin" min="0">
+      </div>
+      <div class="col-6 col-md-3">
+        <label for="prixMax" class="form-label">Prix maximum</label>
+        <input type="number" class="form-control" id="prixMax" name="prixMax" min="0">
+      </div>
+      <div class="col-12 col-md-2">
+        <button type="submit" class="btn btn-outline-dark w-100">Filtrer</button>
+      </div>
+    </form>
+
+    <!-- Grille de produits -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">Smartphone Tecno Spark 20, 128 Go</h2>
+            <p class="fw-bold mb-2">85 000 FCFA</p>
+            <div class="mb-3"><span class="badge text-bg-success">Disponible</span></div>
+            <div class="d-grid gap-2 mt-auto">
+              <button class="btn btn-dark btn-sm">Ajouter au panier</button>
+              <a href="https://wa.me/221785209258" class="btn btn-outline-success btn-sm">Commander sur WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">Smartphone Itel A70, 64 Go</h2>
+            <p class="fw-bold mb-2">52 000 FCFA</p>
+            <div class="mb-3"><span class="badge text-bg-success">Disponible</span></div>
+            <div class="d-grid gap-2 mt-auto">
+              <button class="btn btn-dark btn-sm">Ajouter au panier</button>
+              <a href="https://wa.me/221785209258" class="btn btn-outline-success btn-sm">Commander sur WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">Smartphone Infinix Hot 40i, 128 Go</h2>
+            <p class="fw-bold mb-2">92 000 FCFA</p>
+            <div class="mb-3"><span class="badge text-bg-success">Disponible</span></div>
+            <div class="d-grid gap-2 mt-auto">
+              <button class="btn btn-dark btn-sm">Ajouter au panier</button>
+              <a href="https://wa.me/221785209258" class="btn btn-outline-success btn-sm">Commander sur WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produit sur commande : bouton d'ajout désactivé -->
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">Smartphone Samsung Galaxy A15, 128 Go</h2>
+            <p class="fw-bold mb-2">115 000 FCFA</p>
+            <div class="mb-3"><span class="badge text-bg-secondary">Sur commande</span></div>
+            <div class="d-grid gap-2 mt-auto">
+              <button class="btn btn-dark btn-sm" disabled>Ajouter au panier</button>
+              <a href="https://wa.me/221785209258" class="btn btn-outline-success btn-sm">Commander sur WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">Smartphone Redmi 13C, 128 Go</h2>
+            <p class="fw-bold mb-2">95 000 FCFA</p>
+            <div class="mb-3"><span class="badge text-bg-success">Disponible</span></div>
+            <div class="d-grid gap-2 mt-auto">
+              <button class="btn btn-dark btn-sm">Ajouter au panier</button>
+              <a href="https://wa.me/221785209258" class="btn btn-outline-success btn-sm">Commander sur WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">Smartphone Samsung Galaxy A25, 128 Go</h2>
+            <p class="fw-bold mb-2">168 000 FCFA</p>
+            <div class="mb-3"><span class="badge text-bg-success">Disponible</span></div>
+            <div class="d-grid gap-2 mt-auto">
+              <button class="btn btn-dark btn-sm">Ajouter au panier</button>
+              <a href="https://wa.me/221785209258" class="btn btn-outline-success btn-sm">Commander sur WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">iPhone 13, 128 Go (reconditionné)</h2>
+            <p class="fw-bold mb-2">330 000 FCFA</p>
+            <div class="mb-3"><span class="badge text-bg-success">Disponible</span></div>
+            <div class="d-grid gap-2 mt-auto">
+              <button class="btn btn-dark btn-sm">Ajouter au panier</button>
+              <a href="https://wa.me/221785209258" class="btn btn-outline-success btn-sm">Commander sur WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">Téléphone à touches Itel it2163</h2>
+            <p class="fw-bold mb-2">9 500 FCFA</p>
+            <div class="mb-3"><span class="badge text-bg-success">Disponible</span></div>
+            <div class="d-grid gap-2 mt-auto">
+              <button class="btn btn-dark btn-sm">Ajouter au panier</button>
+              <a href="https://wa.me/221785209258" class="btn btn-outline-success btn-sm">Commander sur WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">Smartphone Tecno Camon 30, 256 Go</h2>
+            <p class="fw-bold mb-2">175 000 FCFA</p>
+            <div class="mb-3"><span class="badge text-bg-success">Disponible</span></div>
+            <div class="d-grid gap-2 mt-auto">
+              <button class="btn btn-dark btn-sm">Ajouter au panier</button>
+              <a href="https://wa.me/221785209258" class="btn btn-outline-success btn-sm">Commander sur WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body d-flex flex-column">
+            <h2 class="h6 card-title">Smartphone Infinix Note 40, 256 Go</h2>
+            <p class="fw-bold mb-2">158 000 FCFA</p>
+            <div class="mb-3"><span class="badge text-bg-success">Disponible</span></div>
+            <div class="d-grid gap-2 mt-auto">
+              <button class="btn btn-dark btn-sm">Ajouter au panier</button>
+              <a href="https://wa.me/221785209258" class="btn btn-outline-success btn-sm">Commander sur WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="bg-dark text-white py-3">
+    <div class="container small">
+      <p class="mb-1">Ndiaga Tech · Marché Sandaga, Dakar</p>
+      <p class="mb-1">Téléphone et WhatsApp : 77 000 00 50 · Ouvert du lundi au samedi, de 9 h à 20 h</p>
+      <p class="mb-0">Projet pédagogique · structure fictive</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
